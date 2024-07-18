@@ -17,4 +17,12 @@
             <input type="submit" value="save_data">
         </div>
     </form>
+    @foreach ($fetcheddata as $data )
+
+    <p>{{$data['name']}}</p>
+    <p>{{$data['email']}}</p>
+
+     <img height="200" width="200" src="{{storage::url($data['name'])}}">
+
+    @endforeach
 </div>

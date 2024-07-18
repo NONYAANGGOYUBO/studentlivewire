@@ -12,6 +12,7 @@ class StoreStudent extends Component
     public $name;
     public $email;
     public $image;
+    public $fetcheddata;
     public function savedate()
     {
         $studentdata=new student;
@@ -29,5 +30,9 @@ class StoreStudent extends Component
     public function render()
     {
         return view('livewire.store-student');
+    }
+    public function mount()
+    {
+        $this->fetcheddata=student::all();
     }
 }
