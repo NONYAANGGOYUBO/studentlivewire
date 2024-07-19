@@ -22,7 +22,7 @@
     <p>{{$data['name']}}</p>
     <p>{{$data['email']}}</p>
 
-     <img height="200" width="200" src="{{storage::url($data['name'])}}">
+     <img height="100" width="100" src="{{Storage::url($data['image'])}}">
 
     @endforeach
 </div>

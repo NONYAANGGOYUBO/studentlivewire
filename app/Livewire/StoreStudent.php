@@ -18,7 +18,7 @@ class StoreStudent extends Component
         $studentdata=new student;
         $studentdata->name=$this->name;
         $studentdata->email=$this->email;
-        $imagename=$this->image->store('photos','public');  //photos is folder name public is default folder inside storage/app/public
+        $imagename=$this->image->store('images','public');  //photos is folder name public is default folder inside storage/app/public
         $studentdata->image=$imagename;
         $studentdata->save();
         $this->resetdata();
